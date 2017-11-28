@@ -1,0 +1,12 @@
+.ui.vertical.segment {
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.ui.grid>.row>.column:nth-child(1) {
+    padding-left: 2em;
+}
+
+.ui.grid>.row>.column:nth-child(3) {
+    padding-right: 2em;
+}

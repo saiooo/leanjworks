@@ -1,1 +1,172 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+h1,h2,h3,h4,h5,h6,p,span,div,a {
+    font-family: 'Lato', sans-serif !important;
+}
+
+.masthead {
+    background:url('./assets/images/hero.jpg') no-repeat !important;
+    height: 556px;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.leanbox {
+    width: 25%;
+    margin-left: 12em;
+    margin-top: 13em;
+}
+
+.leanlink {
+    text-align: justify;
+    padding-bottom: 1.8em;
+    font-weight: 700;
+    font-size: 1.1em;
+    color: #db2828;
+}
+
+.leanlink:hover {
+    color: #db2828;
+    text-decoration: underline;
+}
+
+.subheader {
+    text-align: justify;
+    padding-bottom: 1.8em;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.subheader2 {
+    text-align: justify;
+    padding-bottom: 1.8em;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.ui.vertical.stripe {
+    padding: 2.5em 0em;
+}
+
+@media screen and (max-width: 1024px) {
+    .leanbox{
+        width: 80%;
+        text-align: center;
+        margin: 10em auto;
+    }
+
+    .subheader {
+        padding-left: 0em;
+        text-align: center;
+    }
+
+}
+
+.ui.card {
+    box-shadow: none;
+}
+
+.ui.card>.content>.header:not(.ui) {
+    font-size: 1em;
+}
+
+.ui.card>.content {
+    padding: 0.5em 0em;
+    text-align: left;
+}
+
+.ui.grid>.row {
+    padding-bottom: 1.5em;
+}
+
+h2.ui.header {
+    font-size: 2.2em;
+}
+
+h3.ui.header {
+    font-size: 1.8em;
+}
+
+.ui.menu {
+    background: #000;
+}
+
+.leanlogo {
+    background: url('./assets/images/Logo.jpg');
+    width: 120px;
+    height: 44px;
+    margin: 0.9em 0em 0em 1.8em;
+}
+
+.ui.menu {
+    padding-bottom: 0em;
+}
+
+.leanlinks {
+    text-align: right;
+    margin-top: 1.7em;
+}
+
+.leanmenulink {
+    color: #e5e5e5;
+    font-size: 1.2em;
+    font-weight: 400;
+    display: inline;
+    padding: 0em 1.5em 0em 1.5em;
+}
+
+.leanmenulink:hover {
+    color: #e5e5e5;
+}
+
+@media screen and (max-width: 768px) {
+
+    .leanlinks {
+        text-align: left;
+    }
+    .leanmenulink {
+        padding: 0em 0.2em 0em 0.2em;
+        text-align: left;
+    }
+}
+
+.ui.modal>.header:not(.ui) {
+    text-align: center;
+    font-size: 2.2em;
+}
+
+.ui.modal>.header {
+    border-bottom: none;
+    padding: 2em 0em 1em 0em;
+}
+
+.ui.modal>.header p {
+    text-align: center;
+    font-size: 0.5em;
+    color: #d5d5d5;
+    font-weight: 400;
+    padding-top: 1em;
+}
+
+.ui.modal>.content {
+    padding: 1.5em 8em 1.5em 8em;
+}
+
+.ui.form input:not([type]), .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=email], .ui.form input[type=file], .ui.form input[type=number], .ui.form input[type=password], .ui.form input[type=search], .ui.form input[type=tel], .ui.form input[type=text], .ui.form input[type=time], .ui.form input[type=url] {
+    background: #e5e5e5;
+}
+
+.ui.form textarea {
+    background: #e5e5e5;
+}
+
+.ui.form input:not([type]), .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=email], .ui.form input[type=file], .ui.form input[type=number], .ui.form input[type=password], .ui.form input[type=search], .ui.form input[type=tel], .ui.form input[type=text], .ui.form input[type=time], .ui.form input[type=url], .ui.form textarea {
+    width: 100%; 
+}
+
+#gotIt {
+    text-align: center;
+}
+
+

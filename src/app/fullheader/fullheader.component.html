@@ -1,0 +1,72 @@
+<div class="ui inverted vertical masthead segment">
+
+<div class="ui text leanbox">
+
+      <h1 class="ui inverted header">
+        Welcome to Leantech
+      </h1>
+
+      <p class="subheader">
+        Path to digital success is not a one shot game but
+        rather a loop of bad and good experiments. That
+        requires strategical and methodological mindset,
+        aim for scalability and profitability as well as
+        A-class execution.
+      </p>
+
+      <button class="ui red button" (click)="showBigModal()">Get in touch</button>
+
+
+  </div>
+
+</div>
+
+
+<div class="ui modal" id="firstModal">
+  <div class="header">Your details here</div>
+  <div class="content">
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)" class="ui form">
+      <div class="two fields">
+        <div class="field">
+          <label>Full name *</label>
+          <input type="text" name="first" placeholder="" required ngModel #first="ngModel">
+        </div>
+        <div class="field">
+          <label>Phone</label>
+          <input type="text" name="phone" placeholder="" ngModel #phone="ngModel">
+        </div>
+      </div>
+
+      <div class="field">
+          <label>Email *</label>
+          <input type="text" name="email" placeholder="" required ngModel #email="ngModel">
+      </div>
+
+
+      <div class="field">
+        <label>Your message</label>
+        <textarea name="message" ngModel #message="ngModel"></textarea>
+      </div>
+
+      <div class="field">
+          <div class="ui checkbox">
+            <input type="checkbox" tabindex="0" name="checkbox" required ngModel #checkbox="ngModel">
+            <label>I agree to the Terms and Conditions *</label>
+          </div>
+      </div>
+      <button [disabled]="!f.valid" class="ui red button" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+
+<div class="ui tiny modal" id="secondModal">
+  <div class="header">
+    Thank you for your inquiry!
+    <p>We will contact you within 24h.</p>
+  </div>
+  <div class="content" id="gotIt">
+    <button class="ui red button" type="submit" (click)="closeSecondModal()">OK</button>
+  </div>
+  
+</div>
